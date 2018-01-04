@@ -104,7 +104,7 @@ func parseEvent(e string) (*api.Event, error) {
 			"–", "-", -1)
 	}
 	if len(lines) < 3 {
-		return nil, fmt.Errorf("two few lines: %q", e)
+		return nil, fmt.Errorf("too few lines: %q", e)
 	}
 	date := lines[0]
 	times := strings.Split(lines[1], "-")
